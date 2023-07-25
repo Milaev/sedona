@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/styles.css">
 	<title>Sedona Tour</title>
 </head>
 <body>
@@ -10,7 +11,9 @@
 		<nav class="navigation">
 			<ul class="navigation-list">
 				<li class="navigation-item">
-					<img class="logo" src="" alt="Logo Sedona">
+					<a href="index.html">
+						<img class="logo" src="images/logo.svg" alt="Logo Sedona">
+					</a>
 				</li>
 				<li class="navigation-item">
 					<a class="navigation-link current" href="#">Главная</a>
@@ -24,34 +27,32 @@
 			</ul>
 			<ul class="navigaion-list userbar">
 				<li class="userbar-item">
-					<a class="search-button" href="#">
+					<a class="navigation-link search-button" href="#">
 						<span class="visually-hidden">Поиск</span>
 					</a>
 				</li>
 				<li class="userbar-item">
-					<a class="favourites" href="#">
+					<a class="navigation-link favourites" href="#">
 						<span class="visually-hidden">Избранное</span>
 					</a>
 				</li>
 				<li class="userbar-item">
-					<a class="button entry-button" href="#">Хочу сюда</a>
+					<a class="button entry-button" href="#">Хочу сюда!</a>
 				</li>
 			</ul>
 		</nav>
 	</header>
 	<main class="content">
-		<div class="main-banner-wrapper">
 			<h1 class="visually-hidden">Welcome to Sedona</h1>
-		</div>
-		<div class="uncommon-border"></div>
+			<img class="main-logo" src="images/main-logo.svg" width="458" height="352">
 		<section class="reasons">
 			<h2 class="reasons-title">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 			<p class="reasons-title-description">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 			<ul class="reasons-list">
 				<li class="reasons-item">
 					<h3 class="reasons-subtitle">Настоящий городок</h3>
-					<img class="fisrt-reasons-image" src="" alt="Ранчо на фоне гор. Пример проживания">
 					<p class="reasons-item-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+					<img class="fisrt-reasons-image" src="images/rancho.jpg" width="800" height="384" alt="Ранчо на фоне гор. Пример проживания">
 				</li>
 				<li class="reasons-item">
 					<h3 class="reasons-subtitle">Небольшая площадь</h3>
@@ -67,8 +68,8 @@
 				</li>
 				<li class="reasons-item">
 					<h3 class="reasons-subtitle">Там есть мост дьявола</h3>
-						<img class="last-reasons-image" src="" alt="Необычная гора Мост дьявола. На фоне горная цепь и пустыня">
-						<p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+					<p class="reasons-item-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+					<img class="last-reasons-image" src="images/devilsbridge.jpg" width="800" height="384" alt="Необычная гора Мост дьявола. На фоне горная цепь и пустыня">
 				</li>
 			</ul>
 		</section>
@@ -101,30 +102,32 @@
 			<h3 class="footer-subscribe-title">Подпишитесь на рассылку</h3>
 			<p class="footer-subscribe-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
 			<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail">
-			<button class="button footer-subscribe-button" type="submit">Подписаться</button>
+			<button class="button button-bg-lightblue" type="submit">Подписаться</button>
 		</section>
 		<section class="footer-social">
 			<h3 class="visually-hidden">Способы связи с нами</h3>
 			<ul class="footer-social-list">
 				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="vkontakte" src="#" alt="logo vkontakte">
+					<a class="footer-social-link" href="#">
+						<span class="visually-hidden vkontakte">Вконтакте</span>
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="telegram" src="#" alt="logo telegram">
+					<a class="footer-social-link" href="#">
+						<span class="visually-hidden telegram">Телеграм</span>
 					</a>
 				</li>
 				<li class="footer-social-item">
-					<a class="footer-social-link">
-						<img class="youtube" src="#" alt="logo youtube">
+					<a class="footer-social-link" href="#">
+						<span class="visually-hidden youtube">Youtube</span>
 					</a>
 				</li>
 			</ul>
-			<a class="footer-phone" href="tel:+78128121212">+7-812-812-12-12</a>
+			<a class="footer-phone" href="tel:+78128121212">+7 812 812-12-12</a>
 			<p class="copyright">Milaev Roman 2023
-				<a href="https://github.com/Milaev" class="git-creator">Github</a> Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>
+				<a href="https://github.com/Milaev" class="git-creator">Github</a>
+			</p>
+			<p>Сделано в <a class="copyright-link" href="https://htmlacademy.ru">.html academy</a>
 			</p>
 		</section>
 	</footer>	
