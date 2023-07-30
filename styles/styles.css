@@ -8,7 +8,7 @@
 
 @font-face {
 	font-family: "PT Sans";
-	font-style: bold;
+	font-style: normal;
 	font-weight: 700;
 	src: url("../fonts/ptsans-700.woff2") format("woff2");
 	font-display: swap;
@@ -29,6 +29,17 @@ body {
 	font-weight: 400;
 	color: #333333;
 	background-color: white;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .navigation {
