@@ -362,6 +362,8 @@ body {
 .breadcrumbs {
 	display: flex;
 	margin: 0;
+	padding: 0;
+	padding-left: 70px;
 	list-style-type: none;
 }
 
