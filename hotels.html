@@ -143,49 +143,64 @@
 				<h2 class="visually-hidden">Превью отелей</h2>
 				<ul class="preview-hotels-list">
 					<li class="preview-hotels-item">
-						<a class="preview-hotels-link">
+						<a class="preview-hotels-link" href="#">
 							<img class="preview-hotels-image" src="images/hotel-1.jpg" width="300" height="212" alt="Вид из гостиницы">
+						</a>	
+						<a class="preview-hotels-subtitle-link" href="#">
 							<h3 class="preview-hotels-subtitle">Amara Resort & Spa</h3>
 						</a>
-						<!--Есть мысли по оформлению этих блоков - вероятно дам дисплей инлайн блок-->
-						<span>Гостиница</span><span> от 4000 ₽</span>
-						<a class="button more-detailed-view-hotels" href="#">Подробнее</a>
-						<button class="button button-bg-lightblue" value="favourites">В избранное</button>
-						<div class="preview-hotels-rating-stars"></div>
-						<a class="preview-hotels-rating" href="#">Рейтинг: 8,5</a>
+						<div class="grid-wrapper">
+							<span class="hotels">Гостиница</span><span class="price"> от 4000 ₽</span>
+							<button class="button more-detailed-view-hotels" type="button" >Подробнее</button>
+							<button class="button button-fav" type="submit" value="favourites">В избранное</button>
+							<div class="preview-hotels-rating-stars"></div>
+							<a class="preview-hotels-rating" href="#">Рейтинг: 8,5</a>
+						</div>
 					</li>
 					<li class="preview-hotels-item">
-						<a class="preview-hotels-link">
+						<a class="preview-hotels-link" href="#">
 							<img class="preview-hotels-image" src="images/hotel-2.jpg" width="300" height="212" alt="Вид из гостиницы">
+						</a>
+						<a class="preview-hotels-subtitle-link" href="#">
 							<h3 class="preview-hotels-subtitle">Villas at Poco Diablo</h3>
 						</a>
-						<span>Гостиница</span><span> от 5000 ₽</span>
-						<a class="button more-detailed-view-hotels" href="#">Подробнее</a>
-						<button class="button button-clicked" value="favourites">В избранном</button>
-						<div class="preview-hotels-rating-stars"></div>
-						<a class="preview-hotels-rating" href="#">Рейтинг: 9,2</a>
+						<div class="grid-wrapper">
+							<span class="hotels">Гостиница</span><span class="price"> от 5000 ₽</span>
+							<button class="button more-detailed-view-hotels" type="button">Подробнее</button>
+							<button class="button button-clicked" type="submit" value="favourites">В избранном</button>
+							<div class="preview-hotels-rating-stars"></div>
+							<a class="preview-hotels-rating" href="#">Рейтинг: 9,2</a>
+						</div>
 					</li>
 					<li class="preview-hotels-item">
-						<a class="preview-hotels-link">
+						<a class="preview-hotels-link" href="#">
 							<img class="preview-hotels-image" src="images/hotel-3.jpg" width="300" height="212" alt="Вид из гостиницы">
+						</a>
+						<a class="preview-hotels-subtitle-link" href="#">
 							<h3 class="preview-hotels-subtitle">Desert Quail Inn</h3>
 						</a>
-						<span>Гостиница</span><span> от 2500 ₽</span>
-						<a class="button more-detailed-view-hotels" href="#">Подробнее</a>
-						<button class="button button-bg-lightblue" value="favourites">В избранное</button>
-						<div class="preview-hotels-rating-stars"></div>
-						<a class="preview-hotels-rating" href="#">Рейтинг: 6,9</a>
+						<div class="grid-wrapper">
+						<span class="hotels">Гостиница</span><span class="price"> от 2500 ₽</span>
+						<button class="button more-detailed-view-hotels" type="button" >Подробнее</button>
+						<button class="button button-fav" type="submit" value="favourites">В избранное</button>
+							<div class="preview-hotels-rating-stars"></div>
+							<a class="preview-hotels-rating" href="#">Рейтинг: 6,9</a>
+						</div>
 					</li>
 					<li class="preview-hotels-item">
-						<a class="preview-hotels-link">
+						<a class="preview-hotels-link" href="#">
 							<img class="preview-hotels-image" src="images/hotel-4.jpg" width="300" height="212" alt="Вид из гостиницы">
+						</a>
+						<a class="preview-hotels-subtitle-link" href="#">
 							<h3 class="preview-hotels-subtitle">GreenTree Inn</h3>
 						</a>
-						<span>Гостиница</span><span> от 1500 ₽</span>
-						<a class="button more-detailed-view-hotels" href="#">Подробнее</a>
-						<button class="button button-bg-lightblue" value="favourites">В избранное</button>
-						<div class="preview-hotels-rating-stars"></div>
-						<a class="preview-hotels-rating" href="#">Рейтинг: 5,0</a>
+						<div class="grid-wrapper">
+							<span class="hotels">Гостиница</span><span class="price"> от 1500 ₽</span>
+							<button class="button more-detailed-view-hotels" type="button" >Подробнее</button>
+							<button class="button button-fav" type="submit" value="favourites">В избранное</button>
+							<div class="preview-hotels-rating-stars"></div>
+							<a class="preview-hotels-rating" href="#">Рейтинг: 5,0</a>
+						</div>
 					</li>
 				</ul>
 			</section>
@@ -215,8 +230,10 @@
 		<section class="footer-subscribe">
 			<h2 class="title title-footer-subscribe">Подпишитесь на рассылку</h2>
 			<p class="title-desc title-desc-footer-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-			<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail">
-			<button class="button button-bg-lightblue" type="submit">Подписаться</button>
+			<form class="footer-subscribe-form">
+				<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail">
+				<button class="button button-subscribe" type="submit">Подписаться</button>
+			</form>
 		</section>
 		<section class="footer-social">
 			<h3 class="visually-hidden">Ссылки на наши соцсети</h3>
