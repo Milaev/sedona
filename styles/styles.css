@@ -538,7 +538,7 @@ fieldset {
 
 .preview-hotels-item {
 	display: grid;
-	grid-template-columns: 20px 280px 20px;
+	grid-template-columns: 20px 300px 20px;
 	grid-template-rows: 20px 212px min-content auto; 
 	width: 340px;
 	border: 1px solid #E6E6E6;
@@ -570,10 +570,11 @@ fieldset {
 }
 
 .grid-wrapper {
-	display: grid;
 	grid-row: 4 / 5;
-	grid-column: 2 / 3;
-	grid-template-columns: repeat(2, 140px);
+	grid-column: 2 / 4;
+	display: grid;
+	grid-template-columns: 140px 140px;
+	grid-template-rows: 23px 37px;
 	column-gap: 20px;
 	row-gap: 16px;
 	padding-bottom: 20px;
@@ -621,6 +622,10 @@ fieldset {
 	grid-column: 2 / 3;
 	padding: 9px 22px;
 	border-radius: 4px;
+	text-transform: uppercase;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
 }
 
 .pagination {
