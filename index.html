@@ -161,5 +161,45 @@
 				</div>
 		</section>
 	</footer>
+	<div class="modal-container modal-window-close">
+		<div class="modal modal-booking">
+			<section class="modal-content">
+				<button class="modal-close-button">
+					<span class="visually-hidden">Закрыть</span>
+				</button>
+				<h2 class="modal-title">Поиск гостиницы в седоне</h2>
+				<form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
+					<p class="field-group start-booking">
+						<label class="booking-start-label" for="start-booking">Дата заезда:</label>
+						<input class="booking-start-input field" type="date" id="start-booking" name="start-booking" value="2020-04-27">
+					</p>
+					<span class="date-error">Мы не можем отправить вас в прошлое</span>
+					<span class="visually-hidden date-free">На эти даты есть свободные номера. Пока есть.</span>
+					<p class="field-group end-booking">
+						<label class="booking-end-label" for="end-booking">Дата выезда:</label>
+						<input class="booking-end-input field" type="date" id="end-booking" name="end-booking" value="2023-09-01">
+					</p>
+					<span class="visually-hidden date-error">Мы не можем отправить вас в прошлое</span>
+					<span class="date-free">На эти даты есть свободные номера. Пока есть.</span>
+					<p class="field-group adults">
+						<label class="booking-adults-label" for="adults">Взрослые:</label>
+						<input type="button" class="count count-less">
+						<input class="booking-adults-input field" type="number" id="adults" name="adults" value="2">
+						<input type="button" class="count count-more">
+					</p>
+					<p class="field-group children">
+						<label class="booking-children-label" for="children">Дети:</label>
+						<button class="info">
+							<span class="visually-hidden">Дополнительная информация</span>
+						</button>
+						<input type="button" class="count count-less">
+						<input class="booking-children-input field" type="number" id="children" name="children" value="2">
+						<input type="button" class="count count-more">
+					</p>
+					<button class="button button-bg-lightblue modal-booking-button" type="submit">Найти</button>
+				</form>
+			</section>
+		</div>
+	</div>
 </body>
 </html>
