@@ -221,7 +221,7 @@ img {
 }
 
 .page-container {
-	background-image: url(../images/bg-index-divider.jpg);
+	background-image: url("../images/bg-index-divider.jpg");
 	background-repeat: no-repeat;
 	background-size: 1200px 485px;
 	background-position: top;
