@@ -1461,9 +1461,9 @@ input[type="date"]::-webkit-datetime-edit {
 	font-weight: 700;
 }
 
-/* .modal-window-close {
+.modal-window-close {
 	display: none;
-} */
+}
 
 .date-error {
 	color: #FF5757;
