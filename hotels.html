@@ -135,10 +135,10 @@
 							<div class="filter-range">
 								<div class="scale">
 									<div class="range-bar" style="left: 0; width: 226px">
-										<button class="range-toggle range-toggle-min">
+										<button class="range-toggle range-toggle-min" type="button">
 											<span class="visually-hidden">Изменить минимальную цену</span>
 										</button>
-										<button class="range-toggle range-toggle-max">
+										<button class="range-toggle range-toggle-max" type="button">
 											<span class="visually-hidden">Изменить максимальную цену</span>
 										</button>
 									</div>
@@ -161,13 +161,13 @@
 					<option value="popular">По популярности</option>
 				</select>
 				<div class="sorting-view-link-container">
-					<a class="sorting-view-link sorting-view-link-current" href="#">
+					<a class="sorting-view-link view-link-cards sorting-view-link-current" href="#">
 						<span class="visually-hidden">Показать карточками</span>
 					</a>
-					<a class="sorting-view-link" href="#">
+					<a class="sorting-view-link view-link-full" href="#">
 						<span class="visually-hidden">Показать полностью</span>
 					</a>
-					<a class="sorting-view-link" href="#">
+					<a class="sorting-view-link view-link-list" href="#">
 						<span class="visually-hidden">Показать списком</span>
 					</a>
 				</div>
@@ -264,7 +264,7 @@
 			<h2 class="title title-footer-subscribe">Подпишитесь на рассылку</h2>
 			<p class="title-desc title-desc-footer-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 			<form class="footer-subscribe-form">
-				<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail">
+				<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail" required>
 				<button class="button button-subscribe" type="submit">Подписаться</button>
 			</form>
 		</section>

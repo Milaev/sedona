@@ -55,35 +55,37 @@
 	</header>
 	<main class="content">
 		<div class="page-container">
-			<h1 class="visually-hidden">Welcome to Sedona</h1>
-			<img class="main-logo" src="images/main-logo.svg" width="458" height="352" alt="Написано Welcome to gorgeous Sedona">
+			<div class="main-logo-container">
+				<h1 class="visually-hidden">Welcome to Sedona</h1>
+				<img class="main-logo" src="images/main-logo.svg" width="458" height="352" alt="Написано Welcome to gorgeous Sedona">
+			</div>
 			<section class="reasons">
 				<h2 class="title title-reasons">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
 				<p class="title-desc title-desc-reasons">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
 				<ul class="reasons-list">
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-dark-bg">
 						<h3 class="subtitle subtitle-reasons">Настоящий городок</h3>
 						<p class="item-desc item-desc-reasons">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
 					</li>
-					<li class="reasons-item">
-						<img class="fisrt-reasons-image" src="images/rancho.jpg" width="800" height="384" alt="Ранчо на фоне гор. Пример проживания">
+					<li class="reasons-item reasons-item-wide-img">
+						<img class="first-reasons-image" src="images/rancho.jpg" width="800" height="384" alt="Ранчо на фоне гор. Пример проживания">
 					</li>
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-light-bg">
 						<h3 class="subtitle subtitle-reasons pseudo-element">Небольшая площадь</h3>
 						<p class="item-desc item-desc-reasons">Все достопримечательности находятся очень близко</p>
 					</li>
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-mid-bg">
 						<h3 class="subtitle subtitle-reasons pseudo-element">Красивая дорога</h3>
 						<p class="item-desc item-desc-reasons">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 					</li>
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-light-bg">
 						<h3 class="subtitle subtitle-reasons pseudo-element">Мало туристов</h3>
 						<p class="item-desc item-desc-reasons">Большинство едет в Гранд Каньон и толпится там</p>
 					</li>
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-wide-img">
 						<img class="last-reasons-image" src="images/devilsbridge.jpg" width="800" height="384" alt="Необычная гора Мост дьявола. На фоне горная цепь и пустыня">
 					</li>
-					<li class="reasons-item">
+					<li class="reasons-item reasons-item-dark-bg">
 						<h3 class="subtitle subtitle-reasons">Там есть мост дьявола</h3>
 						<p class="item-desc item-desc-reasons">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
 					</li>
@@ -93,15 +95,15 @@
 				<h2 class="title title-opportunities">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
 				<p class="title-desc title-desc-opportunities">Опытный персонал и качественное обслуживание!</p>
 				<ul class="opportunities-list">
-					<li class="opportunities-item">
+					<li class="opportunities-item opportunities-item-light-bg opportunities-item-house">
 						<h3 class="subtitle subtitle-opportunities">Жильё</h3>
 						<p class="item-desc item-desc-opportunities">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 					</li>
-					<li class="opportunities-item">
+					<li class="opportunities-item opportunities-item-food">
 						<h3 class="subtitle subtitle-opportunities">Еда</h3>
 						<p class="item-desc item-desc-opportunities">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
 					</li>
-					<li class="opportunities-item">
+					<li class="opportunities-item opportunities-item-light-bg opportunities-item-souvenirs">
 						<h3 class="subtitle subtitle-opportunities">Сувениры</h3>
 						<p class="item-desc item-desc-opportunities">Не только китайского, но и настоящего местного производства!</p>
 					</li>
@@ -119,7 +121,7 @@
 				<h2 class="title title-footer-subscribe">Подпишитесь на рассылку</h2>
 				<p class="title-desc title-desc-footer-subscribe">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
 				<form class="footer-subscribe-form">
-					<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail">
+					<input class="footer-subscribe-email" type="email" placeholder="Ваш e-mail" required>
 					<button class="button button-subscribe" type="submit">Подписаться</button>
 				</form>
 		</section>
@@ -164,32 +166,32 @@
 	<div class="modal-container modal-window-close">
 		<div class="modal modal-booking">
 			<section class="modal-content">
-				<button class="modal-close-button">
+				<button class="modal-close-button" type="button">
 					<span class="visually-hidden">Закрыть</span>
 				</button>
 				<h2 class="modal-title">Поиск гостиницы в седоне</h2>
 				<form class="booking-form" action="https://echo.htmlacademy.ru/" method="post">
 					<p class="field-group start-booking">
 						<label class="booking-start-label" for="start-booking">Дата заезда:</label>
-						<input class="booking-start-input field" type="date" id="start-booking" name="start-booking" value="2020-04-27">
+						<input class="booking-start-input field" type="date" id="start-booking" name="start-booking" value="2020-04-27" required>
 					</p>
 					<span class="date-error">Мы не можем отправить вас в прошлое</span>
 					<span class="visually-hidden date-free">На эти даты есть свободные номера. Пока есть.</span>
 					<p class="field-group end-booking">
 						<label class="booking-end-label" for="end-booking">Дата выезда:</label>
-						<input class="booking-end-input field" type="date" id="end-booking" name="end-booking" value="2023-09-01">
+						<input class="booking-end-input field" type="date" id="end-booking" name="end-booking" value="2023-09-01" required>
 					</p>
 					<span class="visually-hidden date-error">Мы не можем отправить вас в прошлое</span>
 					<span class="date-free">На эти даты есть свободные номера. Пока есть.</span>
 					<p class="field-group adults">
 						<label class="booking-adults-label" for="adults">Взрослые:</label>
 						<input type="button" class="count count-less" value="less">
-						<input class="booking-adults-input field" type="number" id="adults" name="adults" value="2">
+						<input class="booking-adults-input field" type="number" id="adults" name="adults" value="2" required>
 						<input type="button" class="count count-more" value="more">
 					</p>
 					<p class="field-group children">
 						<label class="booking-children-label" for="children">Дети:</label>
-						<button class="info">
+						<button class="info" type="button">
 							<span class="visually-hidden">Дополнительная информация</span>
 						</button>
 						<input type="button" class="count count-less" value="less">

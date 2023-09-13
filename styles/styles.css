@@ -17,6 +17,7 @@
 html {
 	height: 100%;
 	min-width: 1280px;
+	background-color: #F2F2F2;
 }
 
 body {
@@ -221,12 +222,15 @@ img {
 }
 
 .page-container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.main-logo-container {
 	background-image: url("../images/bg-index-divider.jpg");
 	background-repeat: no-repeat;
 	background-size: 1200px 485px;
-	background-position: top;
-	width: 1200px;
-	margin: 0 auto;
+	background-color: #615048;
 }
 
 .page-hotels-container {
@@ -239,17 +243,16 @@ img {
 }
 
 .main-logo {
-	display: block;
 	margin: 0 auto;
 	padding-top: 42px;
-	margin-bottom: 91px;
+	padding-bottom: 91px;
 }
 
 .reasons-list {
 	margin: 0;
 	padding: 0;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: repeat(3, 400px);
 	list-style-type: none;
 }
 
@@ -259,32 +262,22 @@ img {
 	padding-bottom: 25px;
 }
 
-.reasons-item {
-	display: flex;
-	flex-direction: column;
+.reasons-item-wide-img {
+	background-color: #82B3D3;
+	grid-column: span 2;
 }
 
-.reasons-item:first-child,
-.reasons-item:last-child {
+.reasons-item-dark-bg {
 	background-color: #82B3D3;
 	color: white;
-	width: 400px;
 }
 
-.reasons-item:nth-child(3),
-.reasons-item:nth-child(4),
-.reasons-item:nth-child(5) {
-	width: 400px;
-}
-
-.reasons-item:nth-child(3),
-.reasons-item:nth-child(5),
-.opportunities-item:nth-child(1),
-.opportunities-item:nth-child(3) {
+.reasons-item-light-bg,
+.opportunities-item-light-bg {
 	background-color: rgba(131, 179, 211, 0.12);
 }
 
-.reasons-item:nth-child(4) {
+.reasons-item-mid-bg {
 	background-color:rgba(131, 179, 211, 0.2)
 }
 
@@ -328,6 +321,7 @@ img {
 	padding: 0;
 	list-style-type: none;
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .opportunities-item {
@@ -336,19 +330,19 @@ img {
 	flex-direction: column;
 }
 
-.opportunities-item:nth-child(1) {
+.opportunities-item-house {
 	background-image: url("../images/house-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 162px 80px;
 }
 
-.opportunities-item:nth-child(2) {
+.opportunities-item-food {
 	background-image: url("../images/hamburger-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 162px 80px;
 }
 
-.opportunities-item:nth-child(3) {
+.opportunities-item-souvenirs {
 	background-image: url("../images/souvenir-icon.svg");
 	background-repeat: no-repeat;
 	background-position: 162px 80px;
@@ -392,7 +386,7 @@ img {
 	color: white;
 	background-color: lightblue;
 	background-image: url("../images/bg-subscribe.jpg");
-	background-size: 1200px 415px;
+	background-size: cover;
 	background-repeat: no-repeat;
 	width: 1200px;
 	margin: 0 auto;
@@ -551,6 +545,7 @@ img {
 
 .breadcrumbs {
 	display: flex;
+	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
 	padding-left: 70px;
@@ -909,8 +904,8 @@ fieldset {
 }
 
 .sorting-view-style {
-	width: 292px;
-	height: 50px;
+	max-width: 292px;
+	max-height: 50px;
 	margin-left: auto;
 	color: #333333;
 	font-size: 18px;
@@ -923,6 +918,7 @@ fieldset {
 	appearance: none;
 	padding-top: 14px;
 	padding-left: 20px;
+	padding-right: 130px;
 	padding-bottom: 14px;
 	background-image: url("../images/select-arrow.svg");
 	background-repeat: no-repeat;
@@ -931,7 +927,7 @@ fieldset {
 
 .sorting-view-link-container {
 	display: flex;
-	width: 160px;
+	max-width: 170px;
 	flex-wrap: wrap;
 	margin-left: 70px;
 }
@@ -943,26 +939,28 @@ fieldset {
 	width: 48px;
 	height: 48px;
 	margin-right: 8px;
+	margin-bottom: 8px;
 	background-repeat: no-repeat;
 	background-position: center;
 	outline: 2px solid #E5E5E5;
 	border-radius: 4px;
 	border: none;
+
 }
 
 .sorting-view-link:last-child {
 	margin-right: 0;
 }
 
-.sorting-view-link:first-child {
+.view-link-cards {
 	background-image: url("../images/catalog-view-cards.svg");
 }
 
-.sorting-view-link:nth-child(2) {
+.view-link-full {
 	background-image: url("../images/catalog-view-full.svg");
 }
 
-.sorting-view-link:nth-child(3) {
+.view-link-list {
 	background-image: url("../images/catalog-view-list.svg");
 }
 
@@ -1030,7 +1028,7 @@ fieldset {
 
 .preview-hotels-subtitle-link {
 	grid-row: 3 / 4;
-	grid-column: 2 / 4;
+	grid-column: 2 / 3;
 	text-decoration: none;
 	color: inherit;
 	margin-top: 16px;
@@ -1050,7 +1048,7 @@ fieldset {
 	grid-column: 2 / 4;
 	display: grid;
 	grid-template-columns: 140px 140px;
-	grid-template-rows: 23px 37px;
+	grid-template-rows: auto auto;
 	column-gap: 20px;
 	row-gap: 16px;
 	padding-bottom: 20px;
@@ -1141,6 +1139,7 @@ fieldset {
 	padding: 0;
 	list-style-type: none;
 	display: flex;
+	flex-direction: row;
 	flex-wrap: wrap;
 	margin-left: 70px;
 	padding-top: 40px;
@@ -1157,6 +1156,7 @@ fieldset {
 	font-weight: 700;
 	display: block;
 	padding: 12px 24px;
+	max-width: 100px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1461,9 +1461,9 @@ input[type="date"]::-webkit-datetime-edit {
 	font-weight: 700;
 }
 
-.modal-window-close {
+/* .modal-window-close {
 	display: none;
-}
+} */
 
 .date-error {
 	color: #FF5757;
